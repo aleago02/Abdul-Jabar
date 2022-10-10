@@ -41,10 +41,12 @@ class ComplexNumber {
     public static void main(String[] args) {
 
         final ComplexNumber number = new ComplexNumber(4, 8);
+        final ComplexNumber number2 = new ComplexNumber(4, 8);
 
         System.out.print(number.real);
         System.out.print('\n');
         System.out.print(number.imaginary);
         
+        System.out.print(number.plus(number2));
     }
 }
