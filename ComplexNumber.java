@@ -27,6 +27,10 @@ class ComplexNumber {
         return null;
     }
 
+    public ComplexNumber toString(final ComplexNumber other) {
+        return null;
+    }
+
     public ComplexNumber div(final ComplexNumber other) {
         final double commonDenominator = other.getReal() * other.getReal() + other.getImaginary() * other.getImaginary();
         final double realNumerator = this.getReal() * other.getReal() + this.getImaginary() * other.getImaginary();
