@@ -48,5 +48,6 @@ class ComplexNumber {
         System.out.print(number.imaginary);
         
         System.out.print(number.plus(number2));
+        System.out.print(number.sub(number2));
     }
 }
