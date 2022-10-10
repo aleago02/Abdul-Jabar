@@ -40,7 +40,11 @@ class ComplexNumber {
 
     public static void main(String[] args) {
 
-        System.out.print(ComplexNumber(4,8));
+        final ComplexNumber number = new ComplexNumber(4, 8);
+
+        System.out.print(number.real);
+        System.out.print('\n');
+        System.out.print(number.imaginary);
         
     }
 }
