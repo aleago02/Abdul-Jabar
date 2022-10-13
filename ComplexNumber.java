@@ -8,17 +8,18 @@ class ComplexNumber {
     }
 
     public double getImaginary() {
+        System.out.println("ciao");
         return 0;
     }
 
     public double getReal() {
         return 0;
     }
-    
+
     public ComplexNumber plus(final ComplexNumber other) {
         return null;
     }
-    
+
     public ComplexNumber sub(final ComplexNumber other) {
         return null;
     }
@@ -32,7 +33,8 @@ class ComplexNumber {
     }
 
     public ComplexNumber div(final ComplexNumber other) {
-        final double commonDenominator = other.getReal() * other.getReal() + other.getImaginary() * other.getImaginary();
+        final double commonDenominator = other.getReal() * other.getReal()
+                + other.getImaginary() * other.getImaginary();
         final double realNumerator = this.getReal() * other.getReal() + this.getImaginary() * other.getImaginary();
         final double imaginaryNumerator = other.getReal() * this.getImaginary() - this.getReal() * other.getImaginary();
         return new ComplexNumber(realNumerator / commonDenominator, imaginaryNumerator / commonDenominator);
@@ -46,7 +48,7 @@ class ComplexNumber {
         System.out.print(number.real);
         System.out.print('\n');
         System.out.print(number.imaginary);
-        
+
         System.out.print(number.plus(number2));
         System.out.print(number.sub(number2));
     }
